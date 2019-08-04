@@ -1,5 +1,6 @@
 package com.seriescoding.roomsample;
 
+import androidx.annotation.NonNull;
 import androidx.room.Entity;
 import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
@@ -8,6 +9,7 @@ import androidx.room.PrimaryKey;
 public class Book {
 
     @PrimaryKey
+    @NonNull
     public String isbn;
 
     public String title;
